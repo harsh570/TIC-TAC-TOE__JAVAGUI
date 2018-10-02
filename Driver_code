@@ -1,0 +1,20 @@
+import java.util.*;
+import javax.swing.*;
+import java.awt.*; 
+import java.awt.event.*; //very important
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Toolkit; 
+ public static void main(String[]args){
+    
+    JFrame frame = new JFrame("TicTacToe");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    Dimension DimMax = Toolkit.getDefaultToolkit().getScreenSize();
+    frame.setMaximumSize(DimMax);
+    frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+    frame.getContentPane().add(new TicTacPanel());
+    frame.pack();
+    frame.setVisible(true);  
+    
+  }
