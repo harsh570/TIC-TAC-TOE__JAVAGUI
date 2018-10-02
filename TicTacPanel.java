@@ -284,6 +284,7 @@ public class TicTacPanel extends JPanel{
       }
     } 
   }
+  @override
   public static void main(String[]args){
     
     JFrame frame = new JFrame("TicTacToe");
